@@ -1,0 +1,4 @@
+var NIGHTCOMMANDO = {
+	lib: {},
+	views: {}
+}

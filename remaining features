@@ -1,0 +1,16 @@
+[X] directory tree view
+
+context menu
+#selection - manual, jqueryui sucks
+breadcrumb bar/address bar
+
+detailed list view with filter
+bandwidth usage view
+disk usage view
+inter-nc drag/drop & cut/paste
+keyboard shortcuts
+
+#drag and drop upload <- do this manually
+
+#304 for icons, switched svg off in favor of .png for performance
+

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+.buttons{
+	border:2px ridge #ccc;
+	overflow:hidden;
+	margin:10px;
+}
+
+.buttons .btn{
+	position:relative;
+	z-index:1;
+	display:inline-block;
+	padding:0 5px;
+	/*background-color:#ccc;*/
+}
+
+.buttons .btn:before{
+	content: " ";
+	z-index:0;
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	/*background-color:#ccc;*/
+	border-right:2px ridge #ccc;
+	border-top:2px ridge #ccc;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.buttons .btn:hover,
+.buttons .btn:hover:before{
+	background-color:blue;
+}
+
+.buttons .btn {
+	line-height:3em;
+}
+
+.buttons .btn:after{
+	width:3em;
+}
+
+#test{
+	display:block;
+	width:32px;
+	height:32px;
+	background-color:#000;
+
+}
+
+:root .buttons .btn:after{
+	filter:none;
+	-ms-transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+	<div class="buttons">
+		<div class="btn">One</div>
+		<div class="btn">Two</div>
+		<div class="btn">Three</div>
+		<div class="btn">Four</div>
+	</div>
+	<div id="test"></div>
+</body>
+</html>
